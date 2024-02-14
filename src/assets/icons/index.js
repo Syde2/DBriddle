@@ -1,5 +1,5 @@
 const icons = {};
-const files = import.meta.globEager('./*.svg');
+const files =  import.meta.glob('./*.svg', { eager: true });
 
 Object.entries(files).forEach(([path, icon]) => {
   const iconName = path

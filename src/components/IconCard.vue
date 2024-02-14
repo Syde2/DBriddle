@@ -1,13 +1,12 @@
 <script setup>
-
-
-
-
+import {icons}  from '../assets/icons/index.js'
+console.log(icons)
 </script>
 
 
 <template>
 	<div class="card">
+    <img :src="icons.Chip" style="color: white; height: 3rem;"  />
 		<span class="material-symbols-outlined">search</span>
 	</div>
 </template>
